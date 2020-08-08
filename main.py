@@ -91,13 +91,10 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-try:
-	model.load('models/chatbot.model')
-except:
-	#Training model
-	model.fit(train, output, n_epoch = 1000, batch_size = 8, show_metric = True)
-	#Saving model
-	model.save('models/chatbot.model')
+#Training model
+model.fit(train, output, n_epoch = 400, batch_size = 8, show_metric = True)
+#Saving model
+model.save('models/chatbot.model')
 
 
 def bag_of_words(s, words):
@@ -118,7 +115,7 @@ def bag_of_words(s, words):
 def chat():
 	print('[INFO] Start talking...(type quit to exit)')
 	while True:
-		inp = input('You:')
+		inp = input('You: ')
 
 		#Type quit to exit
 		if inp.lower() == 'quit':
@@ -138,3 +135,4 @@ def chat():
 		print(random.choice(responses))
 
 chat()
+
