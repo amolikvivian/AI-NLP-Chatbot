@@ -1,0 +1,4 @@
+nltk==3.5
+numpy==1.18.1
+tflearn==0.3.2
+tensorflow==1.15.2
