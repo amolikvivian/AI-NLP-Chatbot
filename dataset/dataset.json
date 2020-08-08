@@ -10,8 +10,8 @@
          "context_set": ""
         },
         {"tag": "information",
-         "patterns": ["what is ACM", "What do you do", "what does ACM do"],
-         "responses": ["ACM - JUIT Student Chapter is a community which looks to develop itself and its members with a technical mindset. We are a branch of ACM International."], 
+         "patterns": ["who are you?", "what are you", "what is your work?", "what work do yo perform?"],
+         "responses": ["I am an AI Chatbot, my work is to talk to you after analyzing what you have asked me. I can be programmed."], 
          	"context_set": ""
         }
    ]
