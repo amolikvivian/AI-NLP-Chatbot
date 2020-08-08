@@ -92,10 +92,13 @@ net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
 #Training model
+print('[INFO] Training Model...')
 model.fit(train, output, n_epoch = 400, batch_size = 8, show_metric = True)
+print('[INFO] Training Completed')
+
 #Saving model
 model.save('models/chatbot.model')
-
+print('[INFO] Model saved')
 
 def bag_of_words(s, words):
 
