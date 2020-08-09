@@ -9,10 +9,21 @@
          "responses": ["Farewell, hope I was of help! :)"],
          "context_set": ""
         },
+        {"tag": "identity",
+         "patterns": ["who are you?", "what are you", ""],
+         "responses": ["I am an AI Chatbot for O2i, my work is to talk to you after analyzing what you have asked me and give you information about us."], 
+         	"context_set": ""
+        },
         {"tag": "information",
-         "patterns": ["who are you?", "what are you", "what is your work?", "what work do yo perform?"],
+         "patterns": ["what is Oxygen 2 Innovation?", "what do you do at Oxygen 2 Innovation", "what is done at this company?", "what work do yo perform?"],
          "responses": ["I am an AI Chatbot, my work is to talk to you after analyzing what you have asked me. I can be programmed."], 
          	"context_set": ""
-        }
+        },
+        
+        {"tag": "time",
+         "patterns": ["what are your timings?", "when are you open?"],
+         "responses": ["The visiting and meeting hours for the office space are from 9 AM to 6 PM"], 
+         	"context_set": ""
+        },
    ]
 }
