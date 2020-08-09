@@ -97,7 +97,7 @@ def bag_of_words(s, words):
 
 
 def chat():
-    print("Start talking with the bot (type quit to stop)!")
+    print("Start talking with the bot (say 'exit' to stop)!")
     
     r = sr.Recognizer()
 
@@ -113,8 +113,8 @@ def chat():
                 inputText = inputText.lower()
 
                 print('You:', inp)
-                if inp.lower() == "quit":
-                    print('Bye!')
+                if inp.lower() == "exit":
+                    print('It was nice talking to you, bye!')
                     break
 
             results = model.predict([bag_of_words(inputText, words)])
