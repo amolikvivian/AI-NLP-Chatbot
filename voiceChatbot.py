@@ -103,7 +103,6 @@ def chat():
 
     while True:
 
-        
         with sr.Microphone() as source:
 
             try:        
