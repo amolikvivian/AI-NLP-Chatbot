@@ -15,7 +15,7 @@
          	"context_set": ""
         },
         {"tag": "information",
-         "patterns": ["what is Oxygen 2 Innovation?", "what do you do at Oxygen 2 Innovation", "what is done at this company?", "what work do yo perform?"],
+         "patterns": ["what is Oxygen to Innovation?", "what do you do at Oxygen to Innovation", "what is done at this company?"],
          "responses": ["I am an AI Chatbot, my work is to talk to you after analyzing what you have asked me. I can be programmed."], 
          	"context_set": ""
         },
@@ -23,6 +23,6 @@
          "patterns": ["what are your timings?", "when are you open?"],
          "responses": ["The visiting and meeting hours for the office space are from 9 AM to 6 PM"], 
          	"context_set": ""
-        },
+        }
    ]
 }
