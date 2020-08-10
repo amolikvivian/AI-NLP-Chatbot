@@ -97,38 +97,41 @@ def bag_of_words(s, words):
 
 
 def chat():
-    print("Start talking with the bot (say 'exit' to stop)!")
+    print("Start talking with the bot (say 'end' to stop)!")
     
     r = sr.Recognizer()
 
     while True:
 
-        try:
-            with sr.Microphone() as source:
-                
+        
+        with sr.Microphone() as source:
+
+            try:        
                 r.adjust_for_ambient_noise(source, duration=0.2)
                 inputAudio = r.listen(source)
 
                 inputText = r.recognize_google(inputAudio)
                 inputText = inputText.lower()
 
-                print('You:', inp)
-                if inp.lower() == "exit":
-                    print('It was nice talking to you, bye!')
+                print('You:', inputText)
+                
+                if inputText.lower() == "end":
+                    print('Bye!')
                     break
 
-            results = model.predict([bag_of_words(inputText, words)])
-            results_index = numpy.argmax(results)
-            tag = labels[results_index]
+                results = model.predict([bag_of_words(inputText, words)])
+                results_index = numpy.argmax(results)
+                tag = labels[results_index]
 
-            for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
+                for tg in data["intents"]:
+                    if tg['tag'] == tag:
+                        responses = tg['responses']
 
-            print(random.choice(responses))
+                print(random.choice(responses))
 
-        except:
-            print('Sorry, I could not understand what you said, please try again')
-            print('[INFO] Speak again...')
+            except:
+                print('Sorry, I could not understand what you said, please try again')
+                print('[INFO] Speak again...')
 
 chat()
+
