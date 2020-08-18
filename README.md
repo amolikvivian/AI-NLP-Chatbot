@@ -12,14 +12,14 @@ The **`dataset.json`** contains the intents on which the model is trained. Each 
 
 ## PyAudio
 
-In Python versions above 3.6 PyAudio is not a supported library and installing PyAudio directly through `pip install pyaudio` fails and needs to be installed separately.<br>
+In Python versions above 3.6 PyAudio is not a supported library and installing PyAudio directly using <br>`pip install pyaudio` fails and needs to be installed separately.<br>
 
 * Windows <br>
-  For that, individually install the wheel file given (this is for Python 3.7, find suitable wheel files [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio)) using <br> 
+  For that, individually install the wheel file given (this is for Python 3.7, find suitable wheel files [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio)) writing the following line in your terminal.<br> 
   **`pip  install <.wh file name>`**
 
 * Ubuntu/Linux <br> 
-  **`sudo apt-get install python3-pyaudio`**
+  **`$ sudo apt-get install python3-pyaudio`**
 
 ## Execute Code
 
