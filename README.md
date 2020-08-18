@@ -16,9 +16,11 @@ In Python versions above 3.6 PyAudio is not a supported library and installing P
 
 ## Execute Code
 
-  *  Run `train-model.py` to train the Fully Connected Network on the dataset. You can change the number of epochs or layers accordingly, the current architecture gave good results with a ~95% accuracy on predicting tags.
-  *  Run the `text-chatbot.py` or `voice-chatbot.py` 
+  *  Run `trainModel.py` to train the Fully Connected Network on the dataset. You can change the number of epochs or layers accordingly, the current architecture gave good results with a ~95% accuracy on predicting tags.
   
+  *  Run `Chatbot.py` for text based chatbot with GUI incorporated
+ 
+
 ## GUI Snippet
 
 <img src=img/gui.png>
