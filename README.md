@@ -1,6 +1,6 @@
 # AI-NLP-Chatbot
 
-An NLP based Chatbot over a simple fully connected neural network architecture using Tensorflow. Trained over a custom dataset specified in the JSON file.
+An NLP based Chatbot over a simple fully connected neural network architecture using Tensorflow and tflearn. Trained over a custom dataset specified in the JSON file.
 
 ## Prerequisites
 
@@ -19,3 +19,6 @@ In Python versions above 3.6 PyAudio is not a supported library and installing P
   *  Run `train-model.py` to train the Fully Connected Network on the dataset. You can change the number of epochs or layers accordingly, the current architecture gave good results with a ~95% accuracy on predicting tags.
   *  Run the `text-chatbot.py` or `voice-chatbot.py` 
   
+## GUI Snippet
+
+<img src=img/gui.png>
