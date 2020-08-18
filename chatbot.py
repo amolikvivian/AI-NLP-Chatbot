@@ -122,7 +122,7 @@ class ChatInterface(Frame):
     def send_message_insert(self, message):
 
         user_input = self.entry_field.get()
-        pr1 = "Human : " + user_input + "\n"
+        pr1 = "You : " + user_input + "\n"
 
         self.text_box.configure(state=NORMAL)
         self.text_box.insert(END, pr1)
@@ -223,5 +223,9 @@ root=Tk()
 ob = ChatInterface(root)
 root.geometry(DIMS)
 root.title("Chatbot-NLP")
+
+img = PhotoImage(file = 'img/bot.png') 
+root.iconphoto(False, img)
+
 root.mainloop()
 
