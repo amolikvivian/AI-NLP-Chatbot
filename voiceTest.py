@@ -140,7 +140,7 @@ class ChatInterface(Frame):
     def about(self):
         tkinter.messagebox.showinfo("Chatbot by AI")
     
-    def send_message_insert(self):
+    def send_message_insert(self, message):
         
         user_input = self.speechToText()
         
