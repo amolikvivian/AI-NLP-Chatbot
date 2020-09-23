@@ -84,7 +84,7 @@ class ChatInterface(Frame):
         self.send_button_frame.pack(fill=BOTH)
 
         #Send button
-        self.send_button = Button(self.send_button_frame, text="Send", width=5, relief=GROOVE, bg='white',
+        self.send_button = Button(self.send_button_frame, text="Speak", width=5, relief=GROOVE, bg='white',
             bd=1, command=lambda: self.send_message_insert(None), activebackground="#FFFFFF",
             activeforeground="#000000")
         self.send_button.pack(side=LEFT, ipady=8)
