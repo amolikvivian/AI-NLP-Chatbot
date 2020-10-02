@@ -5,7 +5,7 @@ import speech_recognition as sr
 import threading
 
 from tkinter import *
-from textChatbot import chat
+from chatbot import chat
 
 DIMS="500x500"
 
