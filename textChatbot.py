@@ -3,7 +3,7 @@ import time
 import tkinter.messagebox
 
 from tkinter import *
-from textChatbot import chat
+from chatbot import chat
 
 DIMS="500x500"
 
